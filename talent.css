@@ -1,0 +1,290 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+
+ 
+   
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+    position: fixed;
+    padding-left: 10rem;
+    padding-right: 8rem;
+    position:sticky;
+
+}
+.custom-padding {
+    padding-left: 10rem !important; /* Adjust value as needed */
+    padding-right: 10rem !important; /* Adjust value as needed */
+}
+
+.navbar  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    /* margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 1rem; */
+    position: fixed;
+    padding-left: 90rem;
+
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.logo img {
+    height: 10rem;
+    margin-right: 10px;
+}
+.nav-item{
+    padding-left: 1rem;
+    font-weight: 600;
+    padding-top: 0.1rem;
+
+}
+
+.user-icon {
+    height: 40px;
+    margin-right:3rem;
+    cursor: pointer;
+}
+
+form button{
+ 
+    border: 9px solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+  
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+ 
+    padding: 20px;
+    margin-top: 13rem;
+   
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    
+}
+
+.all-categories {
+    font-weight: 600;
+    color: #454545;
+    font-size: 13px;
+    margin-left: 3rem;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-bottom: 26px;
+    margin-left: -1rem;
+    margin-right: 7rem;
+    margin: 10px;
+
+}
+
+.category {
+  
+    border: 1px solid #e1dfdf;
+    border-radius: 9px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #454545;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-left: 1rem;
+    margin-right: 9rem;
+    margin: 7px;
+    
+  
+
+}
+
+.category:hover {
+background-color: #d9d7d7;
+border-color: #a6a6a6;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 72rem;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 3.7rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+  
+}
+.card {
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin: 20px;
+   cursor: pointer;
+    margin-left: 5rem;
+    width: 71.5rem;
+   margin-top: -5rem;
+   padding-left: 6rem;
+
+}
+  .card-container{
+     margin: 90px;}
+     .card-container button{
+       border: 1px solid rgb(255, 248, 248);
+        width: 9rem;
+        padding:11px;
+        border-radius: 10px;
+        position: absolute;
+         margin-left: 55rem;
+       
+     }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: 54rem;
+  }
+  
+  .more-info {
+   
+    
+    padding: 10px;
+    border-top: 1px solid #a59f9f;
+    margin-top: 10px;
+    height: 20rem;
+    color: #454545;
+  
+
+  }
+  .info-header1{
+    
+    position: absolute;
+    margin-top: 2rem;
+  }
+.info-header2{
+    position: absolute;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+.info-header3{
+    
+   
+    position: absolute;
+    margin-top: -4.7rem;
+    margin-left: 30rem;
+
+}
+.info-header4{
+    position: absolute;
+    margin-left: -20rem;
+    margin-top: 4rem;
+}
+.info-header5{
+    position: absolute;
+    margin-top: 4rem;
+}
+.info-button{
+    background-color: #000000;
+    position:absolute;
+   
+    margin-top: 17rem;
+    color: white;
+    
+}
+
+#more-cards {
+    display: none; /* hide initially */
+  }
+  
+  .more-info {
+    display: none; /* hide initially */
+  }
+.info-detail{
+    font-size: 700;
+}
+@media (max-width: 997px) {
+   
+    .all-categories{
+        margin-left: 27rem;
+        width: 80rem;
+    }
+    .categories{
+        margin-left: 6rem;
+        width: 70rem;
+    }
+    .search-bar{
+        margin-left: 6rem;
+        width: 73em;
+    }
+    .card-container{
+        width: 10rem;
+    }
+    .card{
+        width: 63rem;
+        margin-left: 6rem;
+    }
+    .card-text{
+        width: 48rem;
+    }
+    .info-button{
+       
+        position: absolute;
+        
+      padding-top: 3rem;
+    }
+    .card-container button{
+        padding: 3px;
+        margin-left: 48rem;
+         width: 7rem;
+         margin-top: 1rem;
+
+
+    }
+    
+}
