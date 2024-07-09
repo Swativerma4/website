@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Timeline with Expandable Image and See More</title>
+    <link rel="stylesheet" href="byte.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+         <nav class="navbar navbar-expand-lg custom-padding  fixed-top bg-white">
+          <div class="container-fluid">
+            <div class="logo ">
+              <img src="assests/logo.png" alt="Posterity Logo">
+           
+          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="logo ">
+              <img src="assests/logo.png" alt="Posterity Logo">
+           
+          </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nav.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="books.html">BOOKS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="reader.html">READER'S CLUB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Wishlist.html">WISHLIST</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="articles.html">ARTICLES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="talent.html">TALENT INTER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="byte.html">BYTE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">VIDEOS</a>
+                  </li>
+                  </ul>
+              
+                <form class="  " role="search ">
+                 
+                     
+                  <button class="btn " type="submit">SIGN IN </button>
+                  
+                </form>
+                
+              </div>
+              
+            </div>
+            <img src="assests/Screenshot 2024-06-30 135113.png" alt="User Icon" class="user-icon">
+          </div>
+      
+        </nav>
+      </header>
+      <div class="container">
+        <h1>Bits and Bytes</h1>
+        <p>The Monday Daily, now collated for your perusal.</p>
+        
+        <h2>Domain</h2>
+        <div class="domain-buttons">
+          <button class="domain-button">Behavioural</button>
+          <button class="domain-button">Functional</button>
+          <button class="domain-button">Soft Skills</button>
+          <button class="domain-button">Technical</button>
+        </div>
+      
+        <input type="text" class="search-bar" placeholder="Type here to search">
+      </div>
+    <div class="timeline" id="timeline"></div>
+   
+
+    <div id="overlay"></div>
+    <button id="seeMoreBtn">See More</button>
+
+    <script src="byte.js"></script>
+</body>
+</html>
