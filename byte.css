@@ -5,6 +5,9 @@ body {
     background-color: white;
    
 }
+
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -17,11 +20,15 @@ header {
     position: fixed;
     padding-left: 10rem;
     padding-right: 7rem;
+   
 
 }
 .custom-padding {
     padding-left: 10rem !important; /* Adjust value as needed */
     padding-right: 10rem !important; /* Adjust value as needed */
+}
+nav.navbar {
+    z-index: 1000; /* Ensure the navbar is below the overlay */
 }
 
 .navbar  {
@@ -36,9 +43,16 @@ header {
     position: fixed;
     padding-left: 90rem;
     z-index: 999;
+    transition: filter 0.3s;
 
 
 }
+.navbar.active {
+    z-index: 100; /* In front of the image */
+  }
+.navbar.blurred {
+    filter: blur(0px); /* apply blur effect */
+  }
 .logo {
     display: flex;
     align-items: center;
@@ -147,25 +161,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 .timeline {
-    margin-top:  3rem;
     position: relative;
-    width: 80%;
-    margin-left: 20rem;
+    width: 60%;
+    margin: auto;
     padding: 20px;
     border-left: 3px solid #000;
 }
-
+.timeline-event.visible {
+    display: block; /* Only visible events are shown */
+}
 .timeline-event {
     position: relative;
+    margin-bottom: 20px;
     
-
-    display: none; /* Hidden by default */
-}
-
-.timeline-event.visible {
-    display: block;
-    margin-top: -1rem /* Only visible events are shown */
 }
 
 .timeline-date {
@@ -173,29 +186,18 @@ body {
     left: -150px;
     font-weight: bold;
     color: #555;
-    top: 0; /* Align with the top of the content */
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -30px; /* Adjust based on the border width */
-    top: 20px; /* Center with the date */
-    width: 20px;
-    height: 20px;
-    background-color:white;
-    border-radius: 50%;
-    border: 1px solid black;
 }
 
 .timeline-content {
     background: #fff;
     padding: 10px;
     border-radius: 5px;
-    
+    z-index: 1000;
+    margin-top: 70px;
    
 }
-
 .timeline-content p {
+    
     border: 1px solid #e1dfdf;
     border-radius: 9px;
     padding: 5px 10px;
@@ -204,28 +206,29 @@ body {
     font-size: 13px;
     font-weight: 600;
     width: auto;
-    display: inline-block; /* Ensures the widt
-    h depends on content */
-    transition: background-color 0.3s ease;
+    display: inline-block;
+   
    
 }
 .timeline-content h2{
     width: 55%;
     font-size: 24px;
-    color: #454545;
+    font-weight: 500;
 }
-
 .image-container {
     overflow: hidden;
     height: 400px; /* Adjust height to show part of the image */
     width: 49%;
-   
-    cursor: pointer;
 
+    cursor: pointer;
+}
+.image-container img{
+    z-index: 1000;
 }
 
 .timeline-image {
     width: 100%;
+   
     transition: transform 0.3s ease-in-out;
 }
 
@@ -239,32 +242,51 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 #overlay img {
     max-width: 90%;
     max-height: 90%;
 }
+
 body.blurred *:not(#overlay):not(#overlay *):not(.timeline-image):not(.navbar) {
-    filter: blur(5px); 
+    filter: blur(0px); 
     background-color: #f0f0f0;
 }
 
-#seeMoreBtn {
-    display: block;
 
+.timeline-dot {
+    position: absolute;
+    left: -30px; /* Adjust based on the border width */
+    top: 20px; /* Center with the date */
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+#seeMoreButton {
+    display: block;
+    margin: 20px auto;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
     border: none;
+    background-color: #e1dfdf;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 5px;
-  
-    
-   
-   
+    border: 1px solid rgb(246, 246, 246);
 }
 
-#seeMoreBtn:hover {
-    background-color: #0056b3;
+#seeMoreButton:hover {
+    background-color: #c7c7c8;
+}
+@media (max-width: 920px){
+    .container p{
+        margin-left: 11rem;
+    }
+    .container h2{
+        margin-left: 20rem;
+    }
 }
